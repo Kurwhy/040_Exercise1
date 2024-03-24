@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" onmouseover="showInfo('Our Tours')">Our Tours</a></li>
+            <li><a href="#" onmouseover="showInfo('About Us')">About Us</a></li>
+            <li><a href="#" onmouseover="showInfo('Booking')">Booking</a></li>
+            <li><a href="#" onmouseover="showInfo('FAQ')">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <header>
+    
+        <div class="hero">
+            <h1>PESONA INDONESIA</h1>
+            <p>Explore the Beauty of Indonesia</p>
+        </div>
+
+    </header>
+
+    <section id="Jurnal">
+        <article>
+         <h2>INDONESIA</h2>
+         <p>Negeri yang mempesona. Dari ujung barat hingga timur, keindahan alamnya tak terbantahkan</p>
+         <p>Mari kita jelajahi beberapa tempat menakjubkan di Indonesia</p>
+        </article>
+    </section>
+
+    <section id="gallery">
+        <div class="photo">
+          <img src="Bali.jpg" alt="bali" onclick="showImageInfo('Temple Bedugul, Bali')">
+          <h2>Temple Bedugul</h2>
+          <p>Bali</p>
+        </div>
+        <div class="photo">
+          <img src="13.jpg" alt="boro" onclick="showImageInfo('Candi Borobudur, Magelang')">
+          <h2>Candi Borobudur</h2>
+          <p>MAGELANG</p>
+        </div>
+        <div class="photo">
+          <img src="dih.jpg" alt="desa" onclick="showImageInfo('Desa Wisata Bantaragung, Majalengka')">
+          <h2>Desa Wisata Bantaragung</h2>
+          <p>MAJALENGKA</p>
+        </div>
+        <div class="photo">
+            <img src="ppp.jpg" alt="pantai" onclick="showImageInfo('Ora Beach, Maluku')">
+            <h2>Ora Beach</h2>
+            <p>MALUKU</p>
+          </div>
+    </section>
+
+    <div class="popup" id="imageInfo">
+        <h2>Informasi Gambar</h2>
+        <p>Nama gambar: <span id="imageName"></span></p>
+        <p>Deskripsi: <span id="imageDescription"></span></p>
+    </div>
+
+    </body>
+</html>
