@@ -16,7 +16,6 @@ function showImageInfo(imageName) {
 
 const navLinks = document.querySelectorAll('nav a');
 
-        // Add hover effect to navigation links
     navLinks.forEach(link => {
         link.addEventListener('mouseover', () => {
             link.style.backgroundColor = '#f0f0f0';
@@ -27,14 +26,12 @@ const navLinks = document.querySelectorAll('nav a');
         });
     });
 
-    const images = ['Bromo.jpg', 'iya.jpg', 'beh.jpg']; // List of image filenames
+    const images = ['Bromo.jpg', 'iya.jpg', 'beh.jpg'];
         let currentIndex = 0;
 
         function changeBackground() {
             document.querySelector('header').style.backgroundImage = `url(${images[currentIndex]})`;
-            currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+            currentIndex = (currentIndex + 1) % images.length;
         }
-
-        // Change background every 5 seconds
         setInterval(changeBackground, 5000);
 }
